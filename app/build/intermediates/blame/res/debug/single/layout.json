@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "D:\\MainApp - Copy\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_top_article.xml",
+        "source": "D:\\MainApp - Copy\\app\\src\\main\\res\\layout\\fragment_top_article.xml"
+    },
+    {
+        "merged": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_article_bookmarked.xml",
+        "source": "D:\\MainApp - Copy\\app\\src\\main\\res\\layout\\item_article_bookmarked.xml"
+    },
+    {
+        "merged": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_article.xml",
+        "source": "D:\\MainApp - Copy\\app\\src\\main\\res\\layout\\item_article.xml"
+    },
+    {
+        "merged": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_base.xml",
+        "source": "D:\\MainApp - Copy\\app\\src\\main\\res\\layout\\activity_base.xml"
+    },
+    {
+        "merged": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_bookmarked_article.xml",
+        "source": "D:\\MainApp - Copy\\app\\src\\main\\res\\layout\\fragment_bookmarked_article.xml"
+    },
+    {
+        "merged": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_article_detail.xml",
+        "source": "D:\\MainApp - Copy\\app\\src\\main\\res\\layout\\fragment_article_detail.xml"
+    }
+]

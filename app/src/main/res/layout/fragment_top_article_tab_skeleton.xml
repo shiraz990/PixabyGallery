@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lay_prod_landing_shimmer"
+        style="@style/CustomCard_view"
+        android:layout_margin="@dimen/x_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x_82">
+
+                <View
+                    android:layout_width="@dimen/x_76"
+                    android:layout_height="@dimen/x_32"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/x_29"
+                    android:layout_marginEnd="@dimen/x_8"
+                    android:layout_marginBottom="@dimen/x_21"
+                    android:background="@color/sep_color"
+                    android:padding="@dimen/x_5" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/x_16"
+                    android:layout_marginTop="@dimen/x_24"
+                    android:layout_marginBottom="@dimen/x_17"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/tv_user_profile_name_shimar"
+                        android:layout_width="@dimen/x_100"
+                        android:layout_height="@dimen/x_14"
+                        android:background="@color/sep_color" />
+
+                    <View
+                        android:id="@+id/tv_user_number_shimar"
+                        android:layout_marginTop="@dimen/x_5"
+                        android:layout_width="@dimen/x_174"
+                        android:layout_height="@dimen/x_16"
+                        android:background="@color/sep_color" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/tv_line_top_shimar"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/x_16"
+                    android:layout_marginEnd="@dimen/x_16"
+                    android:background="@color/sep_color"
+                    android:layerType="software" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x_10"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/x_38"
+                    android:layout_weight="1"
+                    android:background="@color/sep_color" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/x_38"
+                    android:layout_marginStart="@dimen/x_20"
+                    android:layout_weight="1"
+                    android:background="@color/sep_color" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/x_38"
+                    android:layout_marginStart="@dimen/x_20"
+                    android:layout_weight="1"
+                    android:background="@color/sep_color" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x_16"
+                android:layout_marginTop="@dimen/x_24"
+                android:layout_marginBottom="@dimen/x_17">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="@dimen/x_100"
+                    android:layout_height="@dimen/x_14"
+                    android:background="@color/sep_color" />
+
+                <View
+                    android:layout_below="@+id/view1"
+                    android:layout_marginTop="@dimen/x_5"
+                    android:layout_width="@dimen/x_174"
+                    android:layout_height="@dimen/x_16"
+                    android:background="@color/sep_color" />
+
+                <View
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="@dimen/x_44"
+                    android:layout_height="@dimen/x_20"
+                    android:layout_marginEnd="@dimen/x_12"
+                    android:background="@color/sep_color" />
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                style="@style/CustomCard_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x_12"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x_34"
+                    android:layout_margin="@dimen/x_16"
+                    app:ignore="NamespaceTypo">
+
+                    <View
+                        android:layout_width="@dimen/x_61"
+                        android:layout_height="@dimen/x_18"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/sep_color" />
+
+                    <View
+                        android:layout_width="@dimen/x_125"
+                        android:layout_height="@dimen/x_18"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/sep_color"
+                        android:text="500 MB left" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x_10"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/x_10"
+                        android:background="@color/sep_color" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/CustomCard_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x_12"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x_34"
+                    android:layout_margin="@dimen/x_16"
+                    app:ignore="NamespaceTypo">
+
+                    <View
+                        android:layout_width="@dimen/x_61"
+                        android:layout_height="@dimen/x_18"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/sep_color" />
+
+                    <View
+                        android:layout_width="@dimen/x_125"
+                        android:layout_height="@dimen/x_18"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/sep_color"
+                        android:text="500 MB left" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x_10"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/x_10"
+                        android:background="@color/sep_color" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/CustomCard_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x_12"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x_34"
+                    android:layout_margin="@dimen/x_16"
+                    app:ignore="NamespaceTypo">
+
+                    <View
+                        android:layout_width="@dimen/x_61"
+                        android:layout_height="@dimen/x_18"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/sep_color" />
+
+                    <View
+                        android:layout_width="@dimen/x_125"
+                        android:layout_height="@dimen/x_18"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/sep_color"
+                        android:text="500 MB left" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x_10"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/x_10"
+                        android:background="@color/sep_color" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
