@@ -44,8 +44,10 @@ class PixabyDetailFragment : BaseFragment() {
                 DataBindingUtil.inflate(inflater, R.layout.fragment_image_detail, null, false)
         }
 
+        // Argument set
         pixabyItem = args.pixabyItem
 
+        // Set User as title bar
         AppUtils.setTitleToolbar(
             requireActivity().tool_bar,
             pixabyItem.imageUser
@@ -58,6 +60,7 @@ class PixabyDetailFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Show Progressbar
         (requireActivity() as BaseActivity).showProgressWithTransparentBackground()
         Glide.with(this).load(pixabyItem.largeImageUrl)
             .skipMemoryCache(true)
@@ -68,6 +71,7 @@ class PixabyDetailFragment : BaseFragment() {
                     target: Target<Drawable?>?,
                     isFirstResource: Boolean
                 ): Boolean {
+                    // Hide Progressbar
                     (requireActivity() as BaseActivity).hideProgress()
                     return false; // important to return false so the error placeholder can be placed
 
@@ -81,6 +85,7 @@ class PixabyDetailFragment : BaseFragment() {
                     dataSource: DataSource?,
                     isFirstResource: Boolean
                 ): Boolean {
+                    // Hide Progressbar
                     (requireActivity() as BaseActivity).hideProgress()
                     return false; // important to return false so the error placeholder can be placed
 

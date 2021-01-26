@@ -60,7 +60,7 @@ class HomeGalleryFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         galleryListingAdapter  = GalleryListingAdapter(dataBindingComponent) {
-
+            //Navigating to detail screen
             val action = HomeGalleryFragmentDirections.actionHomeFragmentToDetailFragment(it)
             findNavController().navigate(action)
         }
@@ -69,9 +69,11 @@ class HomeGalleryFragment : BaseFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Initial Default search
         fetchImages(Constants.DEFAULT_SEARCH)
 
     }
+    // Observer set for getting API response
     private fun addObservers() {
 
         viewModel.pixabyLiveData().observe(viewLifecycleOwner, Observer {
@@ -79,6 +81,8 @@ class HomeGalleryFragment : BaseFragment() {
             setPixabyData(it)
         })
     }
+
+    // Method to populate images from Pixaby API response
     fun setPixabyData(pixabyResponse: PixabyResponse?) {
 
         val  pixabyItemList = ArrayList<PixabyItem>()
@@ -120,6 +124,7 @@ class HomeGalleryFragment : BaseFragment() {
         })
     }
 
+    // Method to fetch images
     fun fetchImages(searchStr: String) {
 
         var request =PixabyRequest()
