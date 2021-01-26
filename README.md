@@ -7,4 +7,4 @@
 /captures
 .externalNativeBuild
 .idea
-"# NYTimesArticles" 
+"# Pixaby Gallery" 
