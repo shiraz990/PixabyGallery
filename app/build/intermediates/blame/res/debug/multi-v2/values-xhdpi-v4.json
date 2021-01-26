@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+            "outputFile": "D:\\MainAppArchitecture\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
             "map": [
                 {
-                    "source": "D:\\MainApp - Copy\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
+                    "source": "D:\\MainAppArchitecture\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",

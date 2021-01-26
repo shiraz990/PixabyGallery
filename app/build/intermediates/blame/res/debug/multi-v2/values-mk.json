@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
+            "outputFile": "D:\\MainAppArchitecture\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\31cb35395adab1e3d9ed9b6ce77e71eb\\core-1.1.0\\res\\values-mk\\values-mk.xml",
@@ -38,20 +38,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\3604d782a86f4fc566592f333463baf8\\jetified-play-services-basement-17.0.0\\res\\values-mk\\values.xml",
+                    "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\bc3abb1b0c5154c1cb5e7f7c8fa12011\\jetified-firebase-messaging-20.1.5\\res\\values-mk\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "195",
-                        "endOffsets": "442"
+                        "startOffsets": "207",
+                        "endColumns": "99",
+                        "endOffsets": "306"
                     },
                     "to": {
-                        "startLines": "37",
+                        "startLines": "47",
                         "startColumns": "4",
-                        "startOffsets": "3997",
-                        "endColumns": "195",
-                        "endOffsets": "4188"
+                        "startOffsets": "5552",
+                        "endColumns": "103",
+                        "endOffsets": "5651"
                     }
                 },
                 {
@@ -89,23 +89,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\cc01d7a07b9eecb08a66d52b3be84655\\jetified-firebase-messaging-20.1.5\\res\\values-mk\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "99",
-                        "endOffsets": "306"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "5552",
-                        "endColumns": "103",
-                        "endOffsets": "5651"
-                    }
-                },
-                {
                     "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\56507bed7f2d00e89b90b1bf9369d1bc\\navigation-ui-2.2.2\\res\\values-mk\\values-mk.xml",
                     "from": {
                         "startLines": "2,3",
@@ -120,6 +103,23 @@
                         "startOffsets": "5656,5761",
                         "endColumns": "104,127",
                         "endOffsets": "5756,5884"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\877cd18e77e932b0760ebfb7be3e49bc\\jetified-play-services-basement-17.0.0\\res\\values-mk\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "195",
+                        "endOffsets": "442"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3997",
+                        "endColumns": "195",
+                        "endOffsets": "4188"
                     }
                 }
             ]

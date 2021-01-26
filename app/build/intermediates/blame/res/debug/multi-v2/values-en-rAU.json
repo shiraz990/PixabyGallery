@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
+            "outputFile": "D:\\MainAppArchitecture\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
             "map": [
                 {
                     "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\56507bed7f2d00e89b90b1bf9369d1bc\\navigation-ui-2.2.2\\res\\values-en-rAU\\values-en-rAU.xml",

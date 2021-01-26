@@ -60,7 +60,9 @@ class HomeActivity : BaseActivity()  {
 
 
 
+
     }
+    override fun onSupportNavigateUp() = navController.navigateUp()
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -72,11 +74,6 @@ class HomeActivity : BaseActivity()  {
         }
     }
 
-    private fun setTitleToolbar(toolbar: Toolbar, title: String) {
-
-        toolbar.findViewById<TextView>(R.id.tv_title).text = title
-
-    }
 
 
 }

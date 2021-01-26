@@ -81,7 +81,7 @@ object AppUtils {
     @JvmStatic
     fun getBaseRequest(msisdn: String?, userId: String? = ""): BaseRequest {
         val baseRequest = BaseRequest(null)
-        baseRequest.osType = "iOS"
+        baseRequest.osType = "Android"
         baseRequest.osVersion = BuildConfig.VERSION_NAME
         baseRequest.buildNumber = BuildConfig.VERSION_NAME
         baseRequest.msisdn = msisdn

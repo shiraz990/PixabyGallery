@@ -4,8 +4,8 @@ import com.app.base.mainapp.data.repository.*
 import com.app.base.mainapp.data.source.remote.ApiErrorHandle
 import com.app.base.mainapp.data.source.remote.ApiInterface
 import com.app.base.mainapp.domain.repository.*
-import com.app.base.mainapp.domain.usecases.ArticleUseCase
-import com.app.base.mainapp.presentations.home.HomeViewModel
+import com.app.base.mainapp.domain.usecases.PixabyUseCase
+import com.app.base.mainapp.presentations.home.HomeGalleryViewModel
 import com.app.base.mainapp.utils.KeystoreDataSource
 import com.app.base.mainapp.utils.Navigator
 import com.app.base.mainapp.utils.preferences.PreferencesDataSource
@@ -14,13 +14,13 @@ import org.koin.dsl.module
 
 var RepositoryModule = module {
 
-    single { createLoginRepo(get()) }
+    single { createPixabyRepo(get()) }
 }
 
 var UseCaseModules = module {
-    single { createLoginUseCase(get(),createApiErrorHandle()) }
+    single { createPixabyUseCase(get(),createApiErrorHandle()) }
 
-    viewModel { HomeViewModel(get()) }
+    viewModel { HomeGalleryViewModel(get()) }
  }
 
 var NavigatorModule = module {
@@ -47,13 +47,14 @@ fun createKeyStoreModule(): KeystoreDataSource {
     return KeystoreDataSource()
 }
 
-fun createLoginRepo(apiInterface: ApiInterface): ArticleRepository {
-    return ArticleRepositoryImpl(apiInterface)
+
+fun createPixabyRepo(apiInterface: ApiInterface): PixabyRepository {
+    return PixabyRepositoryImpl(apiInterface)
 }
 
-fun createLoginUseCase(
-    repository: ArticleRepository,
+fun createPixabyUseCase(
+    repository: PixabyRepository,
     apiErrorHandle: ApiErrorHandle
-): ArticleUseCase {
-    return ArticleUseCase(repository, apiErrorHandle)
+): PixabyUseCase {
+    return PixabyUseCase(repository, apiErrorHandle)
 }

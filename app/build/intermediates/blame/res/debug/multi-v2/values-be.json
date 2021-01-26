@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-be\\values-be.xml",
+            "outputFile": "D:\\MainAppArchitecture\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-be\\values-be.xml",
             "map": [
                 {
                     "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\31cb35395adab1e3d9ed9b6ce77e71eb\\core-1.1.0\\res\\values-be\\values-be.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\3604d782a86f4fc566592f333463baf8\\jetified-play-services-basement-17.0.0\\res\\values-be\\values.xml",
+                    "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\877cd18e77e932b0760ebfb7be3e49bc\\jetified-play-services-basement-17.0.0\\res\\values-be\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -35,23 +35,6 @@
                         "startOffsets": "3997",
                         "endColumns": "204",
                         "endOffsets": "4197"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\cc01d7a07b9eecb08a66d52b3be84655\\jetified-firebase-messaging-20.1.5\\res\\values-be\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "100",
-                        "endOffsets": "307"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "5556",
-                        "endColumns": "104",
-                        "endOffsets": "5656"
                     }
                 },
                 {
@@ -120,6 +103,23 @@
                         "startOffsets": "2835,2944,3138,3265,3377,3591,3719,3864,4202,4423,4532,4726,4856,5068,5257,5356,5448",
                         "endColumns": "108,193,126,111,213,127,144,132,220,108,193,129,211,188,98,91,107",
                         "endOffsets": "2939,3133,3260,3372,3586,3714,3859,3992,4418,4527,4721,4851,5063,5252,5351,5443,5551"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\bc3abb1b0c5154c1cb5e7f7c8fa12011\\jetified-firebase-messaging-20.1.5\\res\\values-be\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "100",
+                        "endOffsets": "307"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "5556",
+                        "endColumns": "104",
+                        "endOffsets": "5656"
                     }
                 }
             ]

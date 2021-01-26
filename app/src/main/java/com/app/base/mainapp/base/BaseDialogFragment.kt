@@ -24,23 +24,17 @@ abstract class BaseDialogFragment : DialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-      /*  var locale = Locale("en", "US")
-        SELECTED_LANGUAGE = Constants.LANGUAGE_ENGLISH
-        if (SELECTED_LANGUAGE == Constants.LANGUAGE_AR) {
-            locale = Locale("ar", "AE")
-            SELECTED_LANGUAGE = Constants.LANGUAGE_AR
-        }
-        Locale.setDefault(locale)*/
+
 
 
         baseViewModel = getViewModel()
         baseViewModel?.outcomeLiveData?.observe(viewLifecycleOwner, Observer {
             when (it) {
                 is Outcome.Start -> {
-//                    (activity as MainActivity).showProgressLoader(true)
+                //(activity as MainActivity).showProgressLoader(true)
                 }
                 is Outcome.End -> {
-//                    (activity as MainActivity).showProgressLoader(false)
+                //(activity as MainActivity).showProgressLoader(false)
                 }
                 is Outcome.Failure -> {
                     Toast.makeText(

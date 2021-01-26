@@ -27,7 +27,7 @@
                     android:focusable="true">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:clickable="true"
                         android:focusable="true">
@@ -35,11 +35,10 @@
 
                         <com.app.base.mainapp.utils.custom_views.CustomTextView
                             android:id="@+id/tv_title"
-                            android:layout_width="0dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_centerInParent="true"
                             android:gravity="start|center"
-
                             android:textColor="@color/black"
                             android:textSize="@dimen/_17ssp"
                             app:layout_constraintEnd_toEndOf="parent"

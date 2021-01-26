@@ -30,13 +30,13 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="articleDetailFragment">
+                  <entry key="detailFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="x" value="245" />
+                            <option name="y" value="84" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -53,7 +53,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_homeFragment_to_articleDetailFragment">
+                            <entry key="action_homeFragment_to_detailFragment">
                               <value>
                                 <LayoutPositions />
                               </value>

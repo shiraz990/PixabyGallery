@@ -1,7 +1,8 @@
 package com.app.base.mainapp.data.source.local;
 
 import android.content.Context;
-import com.app.base.mainapp.data.source.remote.model.response.ArticleItem;
+
+import com.app.base.mainapp.data.source.remote.model.response.PixabyItem;
 import com.app.base.mainapp.utils.Constants;
 import com.j256.ormlite.dao.Dao;
 
@@ -29,21 +30,21 @@ public class DatabaseManager {
         return mInstance;
     }
 
-    public boolean isArticleBookmarkedExisiOnDB() {
-        boolean isArticleBookmarkedExist = false;
-        List<ArticleItem> articlesItemList = getAllArticles();
-        if ( articlesItemList!= null && !articlesItemList.isEmpty()) {
+    public boolean isPixabyItemExisiOnDB() {
+        boolean isPixabyItemExisit = false;
+        List<PixabyItem> pixabyItemList = getAllPixaby();
+        if ( pixabyItemList!= null && !pixabyItemList.isEmpty()) {
 
-            isArticleBookmarkedExist = true;
+            isPixabyItemExisit = true;
 
         }
-        return isArticleBookmarkedExist;
+        return isPixabyItemExisit;
     }
 
     @Inject
     DatabaseManager(Context context) {
         tables = new ArrayList<Class<?>>();
-        tables.add(ArticleItem.class);
+        tables.add(PixabyItem.class);
         mHelper = new DatabaseHelper(context, tables);
 
     }
@@ -62,11 +63,11 @@ public class DatabaseManager {
 
 
 
-    public List<ArticleItem> getAllArticles() {
+    public List<PixabyItem> getAllPixaby() {
         try {
-            return mHelper.getDao(ArticleItem.class).callBatchTasks(new Callable<List<ArticleItem>>() {
-                public List<ArticleItem> call() throws Exception {
-                    return mHelper.getDao(ArticleItem.class).queryBuilder().orderBy(Constants.ID_FIELD, true).query();
+            return mHelper.getDao(PixabyItem.class).callBatchTasks(new Callable<List<PixabyItem>>() {
+                public List<PixabyItem> call() throws Exception {
+                    return mHelper.getDao(PixabyItem.class).queryBuilder().orderBy(Constants.ID_FIELD, true).query();
                 }
             });
         } catch (Exception e) {
@@ -74,9 +75,9 @@ public class DatabaseManager {
         }
         return new ArrayList<>();
     }
-    public boolean saveArticle(List<ArticleItem> articles) {
+    public boolean savePixabyItem(List<PixabyItem> pixabyItem) {
         try {
-            return mHelper.getDao(ArticleItem.class).create(articles) == articles.size();
+            return mHelper.getDao(PixabyItem.class).create(pixabyItem) == pixabyItem.size();
         } catch (SQLException e) {
             e.printStackTrace();
         }

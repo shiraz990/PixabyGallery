@@ -3113,7 +3113,6 @@ drawable focus_outer
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable header_background
-drawable ic_bookmark_shapes_svgrepo_com
 drawable ic_code_scanner_auto_focus_off
 drawable ic_code_scanner_auto_focus_on
 drawable ic_code_scanner_flash_off
@@ -3124,6 +3123,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_right_arrow
 drawable kprogresshud_spinner
+drawable loader_img
 drawable met_ic_clear
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -3143,6 +3143,7 @@ drawable notify_panel_notification_icon_bg
 drawable places_autocomplete_toolbar_shadow
 drawable places_powered_by_google_dark
 drawable places_powered_by_google_light
+drawable progress_animation
 drawable quantum_ic_arrow_back_grey600_24
 drawable quantum_ic_clear_grey600_24
 drawable quantum_ic_cloud_off_vd_theme_24
@@ -3215,6 +3216,7 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
+id action_homeFragment_to_detailFragment
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -3231,11 +3233,6 @@ id alertTitle
 id all
 id always
 id appBarLayout
-id articleDetail
-id article_date
-id article_desc
-id article_image
-id article_title
 id async
 id auto
 id autoFocus
@@ -3245,7 +3242,6 @@ id background
 id barrier
 id beginning
 id blocking
-id bookmark
 id bottom
 id bottom_to_top
 id buttonPanel
@@ -3254,6 +3250,7 @@ id camera2
 id camera_preview
 id cancel_action
 id cardview
+id cardview_search
 id center
 id center_horizontal
 id center_vertical
@@ -3261,8 +3258,7 @@ id chains
 id checkbox
 id checked
 id chronometer
-id cl_article
-id cl_shimmer
+id cl_list
 id clip_horizontal
 id clip_vertical
 id cloudy
@@ -3283,6 +3279,8 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detailFragment
+id detail_image
 id details_label
 id deviceDefault
 id dialog_button
@@ -3299,6 +3297,7 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id et_search
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3334,7 +3333,6 @@ id group_divider
 id groups
 id h263
 id h264
-id headerLayout
 id helvetica_neue_bold_ttf
 id highlight
 id home
@@ -3359,7 +3357,6 @@ id jpeg
 id label
 id labeled
 id largeLabel
-id lay_prod_landing_shimmer
 id left
 id left_to_right
 id light
@@ -3380,7 +3377,6 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id nav_controller_view_tag
-id nav_detail
 id nav_home
 id nav_host_fragment
 id nav_host_fragment_container
@@ -3404,6 +3400,7 @@ id parent_matrix
 id percent
 id picture
 id pin
+id pixaby_image
 id places_autocomplete_action_bar
 id places_autocomplete_back_button
 id places_autocomplete_clear_button
@@ -3442,10 +3439,8 @@ id right
 id right_icon
 id right_side
 id right_to_left
-id rl_bottom
 id rl_top
-id rv_articles
-id rv_bookmarked_articles
+id rv_gallery
 id satellite
 id save_image_matrix
 id save_non_transition_alpha
@@ -3469,7 +3464,6 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selected_title
-id shimmer
 id shortcut
 id showCustom
 id showHome
@@ -3497,7 +3491,6 @@ id surface
 id surface_view
 id surface_view_root
 id tabMode
-id tab_layout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3535,10 +3528,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id tv_line_top_shimar
+id tv_empty
 id tv_title
-id tv_user_number_shimar
-id tv_user_profile_name_shimar
 id unchecked
 id uniform
 id unlabeled
@@ -3546,10 +3537,8 @@ id up
 id useLogo
 id vertical
 id video
-id view1
 id view_finder_view
 id view_offset_helper
-id view_pager
 id visible
 id visible_removing_fragment_view_tag
 id wide
@@ -3620,7 +3609,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_article_detail
 layout activity_base
 layout activity_home
 layout app_bar_main
@@ -3646,13 +3634,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dp_example
-layout fragment_article_detail
-layout fragment_bookmarked_article
-layout fragment_home
-layout fragment_top_article
-layout fragment_top_article_tab_skeleton
-layout item_article
-layout item_article_bookmarked
+layout fragment_home_gallery
+layout fragment_image_detail
+layout item_pixaby
 layout kprogresshud_hud
 layout layout_default_item_skeleton
 layout layout_shimmer
@@ -3703,7 +3687,6 @@ menu activity_main_drawer
 mipmap ic_icon
 mipmap ic_icon_foreground
 mipmap ic_icon_round
-navigation nav_article_detail
 navigation nav_home
 raw places_keep
 string Helvetic_Regular
@@ -3753,7 +3736,6 @@ string abc_toolbar_collapse_description
 string api_key
 string app_name
 string appbar_scrolling_view_behavior
-string article_detail_label
 string bottom_sheet_behavior
 string cameraview_default_autofocus_marker
 string cameraview_filter_autofix
@@ -3811,6 +3793,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string heading_text
 string hide_bottom_view_on_scroll_behavior
 string mtrl_chip_close_icon_content_description
 string nav_app_bar_navigate_up_description
@@ -3818,13 +3801,14 @@ string nav_app_bar_open_drawer_description
 string neotech_arabic_number_font
 string neotech_helvetica
 string neotech_helvetica_bold
-string ny_times_label
+string no_data_found
 string ok
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pixaby_detail_label
 string places_autocomplete_clear_button
 string places_autocomplete_label
 string places_autocomplete_no_results_for_query
@@ -3838,8 +3822,7 @@ string project_id
 string search_menu_title
 string section
 string status_bar_notification_info_overflow
-string tab_bookmarked_articles
-string tab_top_articles
+string text_search
 string translate
 style AVLoadingIndicatorView
 style AVLoadingIndicatorView_Large

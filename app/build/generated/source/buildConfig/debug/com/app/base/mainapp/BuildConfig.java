@@ -11,6 +11,7 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
   // Fields from build type: debug
-  public static final String BASE_URL = "https://api.nytimes.com/svc/topstories/v2/";
+  public static final String API_KEY = "13522656-8c9a317fce5b35f7b79e67f58";
+  public static final String BASE_URL = "https://pixabay.com/";
   public static final Boolean IS_DEBUG = true;
 }

@@ -19,8 +19,8 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int camera_preview = 0x7f0a0056;
-        public static final int view_finder_view = 0x7f0a017e;
+        public static final int camera_preview = 0x7f0a0051;
+        public static final int view_finder_view = 0x7f0a0173;
     }
     public static final class integer {
         private integer() {}
@@ -31,6 +31,6 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int merge_camera_preview_view_finder = 0x7f0d0040;
+        public static final int merge_camera_preview_view_finder = 0x7f0d003b;
     }
 }

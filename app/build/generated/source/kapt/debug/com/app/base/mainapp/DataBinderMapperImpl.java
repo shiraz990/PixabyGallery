@@ -7,12 +7,9 @@ import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.app.base.mainapp.databinding.ActivityBaseBindingImpl;
-import com.app.base.mainapp.databinding.FragmentArticleDetailBindingImpl;
-import com.app.base.mainapp.databinding.FragmentBookmarkedArticleBindingImpl;
-import com.app.base.mainapp.databinding.FragmentHomeBindingImpl;
-import com.app.base.mainapp.databinding.FragmentTopArticleBindingImpl;
-import com.app.base.mainapp.databinding.ItemArticleBindingImpl;
-import com.app.base.mainapp.databinding.ItemArticleBookmarkedBindingImpl;
+import com.app.base.mainapp.databinding.FragmentHomeGalleryBindingImpl;
+import com.app.base.mainapp.databinding.FragmentImageDetailBindingImpl;
+import com.app.base.mainapp.databinding.ItemPixabyBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -26,28 +23,19 @@ import java.util.List;
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final int LAYOUT_ACTIVITYBASE = 1;
 
-  private static final int LAYOUT_FRAGMENTARTICLEDETAIL = 2;
+  private static final int LAYOUT_FRAGMENTHOMEGALLERY = 2;
 
-  private static final int LAYOUT_FRAGMENTBOOKMARKEDARTICLE = 3;
+  private static final int LAYOUT_FRAGMENTIMAGEDETAIL = 3;
 
-  private static final int LAYOUT_FRAGMENTHOME = 4;
+  private static final int LAYOUT_ITEMPIXABY = 4;
 
-  private static final int LAYOUT_FRAGMENTTOPARTICLE = 5;
-
-  private static final int LAYOUT_ITEMARTICLE = 6;
-
-  private static final int LAYOUT_ITEMARTICLEBOOKMARKED = 7;
-
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(7);
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.app.base.mainapp.R.layout.activity_base, LAYOUT_ACTIVITYBASE);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.app.base.mainapp.R.layout.fragment_article_detail, LAYOUT_FRAGMENTARTICLEDETAIL);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.app.base.mainapp.R.layout.fragment_bookmarked_article, LAYOUT_FRAGMENTBOOKMARKEDARTICLE);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.app.base.mainapp.R.layout.fragment_home, LAYOUT_FRAGMENTHOME);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.app.base.mainapp.R.layout.fragment_top_article, LAYOUT_FRAGMENTTOPARTICLE);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.app.base.mainapp.R.layout.item_article, LAYOUT_ITEMARTICLE);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.app.base.mainapp.R.layout.item_article_bookmarked, LAYOUT_ITEMARTICLEBOOKMARKED);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.app.base.mainapp.R.layout.fragment_home_gallery, LAYOUT_FRAGMENTHOMEGALLERY);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.app.base.mainapp.R.layout.fragment_image_detail, LAYOUT_FRAGMENTIMAGEDETAIL);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.app.base.mainapp.R.layout.item_pixaby, LAYOUT_ITEMPIXABY);
   }
 
   @Override
@@ -65,41 +53,23 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_base is invalid. Received: " + tag);
         }
-        case  LAYOUT_FRAGMENTARTICLEDETAIL: {
-          if ("layout/fragment_article_detail_0".equals(tag)) {
-            return new FragmentArticleDetailBindingImpl(component, view);
+        case  LAYOUT_FRAGMENTHOMEGALLERY: {
+          if ("layout/fragment_home_gallery_0".equals(tag)) {
+            return new FragmentHomeGalleryBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for fragment_article_detail is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for fragment_home_gallery is invalid. Received: " + tag);
         }
-        case  LAYOUT_FRAGMENTBOOKMARKEDARTICLE: {
-          if ("layout/fragment_bookmarked_article_0".equals(tag)) {
-            return new FragmentBookmarkedArticleBindingImpl(component, view);
+        case  LAYOUT_FRAGMENTIMAGEDETAIL: {
+          if ("layout/fragment_image_detail_0".equals(tag)) {
+            return new FragmentImageDetailBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for fragment_bookmarked_article is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for fragment_image_detail is invalid. Received: " + tag);
         }
-        case  LAYOUT_FRAGMENTHOME: {
-          if ("layout/fragment_home_0".equals(tag)) {
-            return new FragmentHomeBindingImpl(component, view);
+        case  LAYOUT_ITEMPIXABY: {
+          if ("layout/item_pixaby_0".equals(tag)) {
+            return new ItemPixabyBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for fragment_home is invalid. Received: " + tag);
-        }
-        case  LAYOUT_FRAGMENTTOPARTICLE: {
-          if ("layout/fragment_top_article_0".equals(tag)) {
-            return new FragmentTopArticleBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for fragment_top_article is invalid. Received: " + tag);
-        }
-        case  LAYOUT_ITEMARTICLE: {
-          if ("layout/item_article_0".equals(tag)) {
-            return new ItemArticleBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for item_article is invalid. Received: " + tag);
-        }
-        case  LAYOUT_ITEMARTICLEBOOKMARKED: {
-          if ("layout/item_article_bookmarked_0".equals(tag)) {
-            return new ItemArticleBookmarkedBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for item_article_bookmarked is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for item_pixaby is invalid. Received: " + tag);
         }
       }
     }
@@ -150,21 +120,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
     static {
       sKeys.put(0, "_all");
-      sKeys.put(1, "article");
+      sKeys.put(1, "pixaby");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(7);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
 
     static {
       sKeys.put("layout/activity_base_0", com.app.base.mainapp.R.layout.activity_base);
-      sKeys.put("layout/fragment_article_detail_0", com.app.base.mainapp.R.layout.fragment_article_detail);
-      sKeys.put("layout/fragment_bookmarked_article_0", com.app.base.mainapp.R.layout.fragment_bookmarked_article);
-      sKeys.put("layout/fragment_home_0", com.app.base.mainapp.R.layout.fragment_home);
-      sKeys.put("layout/fragment_top_article_0", com.app.base.mainapp.R.layout.fragment_top_article);
-      sKeys.put("layout/item_article_0", com.app.base.mainapp.R.layout.item_article);
-      sKeys.put("layout/item_article_bookmarked_0", com.app.base.mainapp.R.layout.item_article_bookmarked);
+      sKeys.put("layout/fragment_home_gallery_0", com.app.base.mainapp.R.layout.fragment_home_gallery);
+      sKeys.put("layout/fragment_image_detail_0", com.app.base.mainapp.R.layout.fragment_image_detail);
+      sKeys.put("layout/item_pixaby_0", com.app.base.mainapp.R.layout.item_pixaby);
     }
   }
 }

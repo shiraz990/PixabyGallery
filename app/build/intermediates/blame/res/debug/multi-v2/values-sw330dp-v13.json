@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\MainApp - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw330dp-v13\\values-sw330dp-v13.xml",
+            "outputFile": "D:\\MainAppArchitecture\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw330dp-v13\\values-sw330dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\muhammad.shiraz\\.gradle\\caches\\transforms-2\\files-2.1\\ef103c016126fb25970ed54c3474a7dd\\ssp-android-1.0.6\\res\\values-sw330dp-v13\\values-sw330dp-v13.xml",
